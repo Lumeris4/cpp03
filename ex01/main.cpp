@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/20 13:32:59 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/20 18:59:59 by lelanglo         ###   ########.fr       */
+/*   Created: 2025/02/20 19:03:52 by lelanglo          #+#    #+#             */
+/*   Updated: 2025/02/20 19:17:15 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-class ScavTrap: public ClapTrap
+int main()
 {
-	private:
-	bool _guard_mod;
+	ScavTrap Elouann("Elouann");
+	ScavTrap Leo("Leo");
 	
-	public:
-	ScavTrap();
-	ScavTrap(std::string name);
-	~ScavTrap();
-	ScavTrap &operator=(const ScavTrap &src);
-	ScavTrap(const ScavTrap &copy);
-	void guardGate();
-	void attack(const std::string &target);
-};
+	Elouann.attack("Leo");
+	Leo.takeDamage(0);
+	Leo.beRepaired(10);
+	Leo.guardGate();
+	for (int i = 0; i < 10; i++)
+		Elouann.attack("Leo");
+	Leo.attack("Elouann");
+	return 0;
+}

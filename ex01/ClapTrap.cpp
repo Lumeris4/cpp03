@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 10:53:31 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/20 14:43:57 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/20 19:08:57 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,15 @@ ClapTrap::~ClapTrap() {std::cout << "Destructor called for " << this->_name << s
 
 ClapTrap::ClapTrap(const ClapTrap &other): _Hit_points(10), _Energie_points(10), _damage(0)
 {
-	this->_name = other._name;
+	*this = other;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 {
-	if (this->_name != other._name)
-		this->_name = other._name;
+	this->_name = other._name;
+	this->_damage = other._damage;
+	this->_Energie_points = other._Energie_points;
+	this->_Hit_points = other._Hit_points;
 	return *this;
 }
 
