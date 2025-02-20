@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 10:17:34 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/20 11:11:47 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/20 12:29:52 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ class ClapTrap
 {
 	private:
 	std::string _name;
-	const int _Hit_points;
-	const int _Energie_points;
-	const int _damage;
+	int _Hit_points;
+	int _Energie_points;
+	int _damage;
 	
 	public:
 	ClapTrap(std::string name);

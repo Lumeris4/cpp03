@@ -1,11 +1,11 @@
 MAKEFLAGS += --silent
 
-NAME = zombie
+NAME = clap
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -g3 -std=c++98
 
-SRCS = main.cpp Zombie.cpp ZombieHorde.cpp
+SRCS = main.cpp ClapTrap.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
