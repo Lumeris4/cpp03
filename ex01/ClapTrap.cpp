@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 10:53:31 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/20 19:08:57 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/20 20:42:24 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,11 @@ void ClapTrap::attack(const std::string &target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
+	if (this->_Hit_points <= 0)
+	{
+		std::cout << this->_name << " is dead\n";
+		return;
+	}
 	std::cout << this->_name << " takes " << amount << " damage !\n";
 	this->_Hit_points -= amount;
 }
