@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 13:33:01 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/21 09:47:24 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/21 09:51:34 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,11 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::guardGate()
 {
+	if (this->_guard_mod == true)
+	{
+		std::cout << this->_name << " is already in Gate keeper mode.\n";
+		return;
+	}
 	std::cout << this->_name << " is now in Gate keeper mode.\n";
 	this->_guard_mod = true;
 }
