@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 13:32:59 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/20 20:44:10 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/21 09:02:37 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class ScavTrap: public ClapTrap
 	public:
 	ScavTrap();
 	ScavTrap(std::string name);
-	~ScavTrap();
+	virtual ~ScavTrap();
 	ScavTrap &operator=(const ScavTrap &src);
 	ScavTrap(const ScavTrap &copy);
 	void guardGate();
