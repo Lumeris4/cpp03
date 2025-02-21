@@ -6,13 +6,13 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 10:53:31 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/20 20:42:24 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/21 10:02:04 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(): _Hit_points(10), _Energie_points(10), _damage(0) {};
+ClapTrap::ClapTrap(): _Hit_points(10), _Energie_points(10), _damage(0) {std::cout << "constructor default called"<< std::endl;}
 
 ClapTrap::ClapTrap(std::string name): _Hit_points(10), _Energie_points(10), _damage(0)
 {
