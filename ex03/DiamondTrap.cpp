@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 10:09:21 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/26 13:25:46 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/26 13:46:36 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,8 @@ DiamondTrap::DiamondTrap(): ClapTrap()
 DiamondTrap::DiamondTrap(std::string name): ClapTrap(name), ScavTrap(name), FragTrap(name)
 {
 	this->_damage = FragTrap::_damage;
-	std::cout << KRED << this->_damage << "\n" KNRM;
 	this->_Energie_points = ScavTrap::_Energie_points;
-	std::cout << KRED << this->_Energie_points << "\n" KNRM;
 	this->_Hit_points = FragTrap::_Hit_points;
-	std::cout << KRED << this->_Hit_points << "\n" KNRM;
 	this->_name = name + "_name";
 	std::cout << this->_name <<" Name Diamond constructor called\n";
 }
