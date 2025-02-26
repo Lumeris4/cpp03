@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 10:53:31 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/21 10:02:32 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/26 09:44:36 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void ClapTrap::attack(const std::string &target)
 		std::cout << this->_name << " can't attack !\n";
 		return ;
 	}
-	std::cout << this->_name << " attacks " << target << ", causing "
+	std::cout << "ClapTrap" << this->_name << " attacks " << target << ", causing "
 		<< this->_damage << " points of damage !\n";
 	this->_Energie_points--;
 }

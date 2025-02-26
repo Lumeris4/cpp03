@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 09:18:10 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/21 09:21:21 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/26 09:37:56 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,5 @@ class FragTrap: public ClapTrap
 	FragTrap &operator=(const FragTrap &src);
 	FragTrap(const FragTrap &copy);
 	void highFiveGuys();
+	void attack(const std::string &target);
 };
