@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 09:22:00 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/26 11:07:00 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/26 13:25:36 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ FragTrap::FragTrap(): ClapTrap()
 	std::cout << "FragTrap default constructor called \n";
 }
 
-FragTrap::FragTrap(std::string name)
+FragTrap::FragTrap(std::string name): ClapTrap(name)
 {
 	this->_damage = 30;
 	this->_Energie_points = 100;
